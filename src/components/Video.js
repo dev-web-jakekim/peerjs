@@ -19,13 +19,9 @@ const Video = ({ stream }) => {
         console.log(stream)
     }, [stream]);
 
-    const renderVideo = () => {
-        const videoEl = <div></div>
-    }
-
     return (
         <Container>
-            <Title> {stream.id || ''} </Title>
+            <Title> {stream?.id || ''} </Title>
             <Contents ref={videoRef} autoPlay />
         </Container>
     )
